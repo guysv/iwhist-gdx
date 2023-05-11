@@ -6,6 +6,6 @@
     "removelibs": [ "desktop-1.0.jar" ],
     "output": "out-windows64",
     "verbose": true,
-    "mainclass": "ogz.tripeaks.desktop.DesktopLauncher",
+    "mainclass": "guysv.iwhist.desktop.DesktopLauncher",
     "useZgcIfSupportedOs": true
 }

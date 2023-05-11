@@ -17,7 +17,7 @@ android {
         exclude 'META-INF/robovm/ios/robovm.xml'
     }
     defaultConfig {
-        applicationId "ogz.tripeaks"
+        applicationId "guysv.iwhist"
         minSdkVersion 24
         targetSdkVersion 33
         versionCode 21
@@ -86,7 +86,7 @@ task run(type: Exec) {
     }
 
     def adb = path + "/platform-tools/adb"
-    commandLine "$adb", 'shell', 'am', 'start', '-n', 'ogz.tripeaks/ogz.tripeaks.AndroidLauncher'
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'guysv.iwhist/guysv.iwhist.AndroidLauncher'
 }
 
 eclipse.project.name = appName + "-android"
