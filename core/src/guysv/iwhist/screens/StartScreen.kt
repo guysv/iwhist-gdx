@@ -67,6 +67,56 @@ class StartScreen(
                     .align(Align.center)
 
                 add(
+                        MyTextButton(
+                                assets[BundleAssets.Bundle].get("host"),
+                                skinData,
+                                preferences.themeKey
+                        ).apply {
+                            setAction {
+                                game.addScreen(
+                                        GameScreen(
+                                                game,
+                                                assets,
+                                                viewport,
+                                                batch,
+                                                preferences,
+                                                skinData,
+                                                layouts
+                                        )
+                                )
+                                game.setScreen<GameScreen>()
+                                game.removeScreen<StartScreen>()
+                                this@StartScreen.dispose()
+                            }
+                        }
+                )
+                row()
+                add(
+                        MyTextButton(
+                                assets[BundleAssets.Bundle].get("joinGame"),
+                                skinData,
+                                preferences.themeKey
+                        ).apply {
+                            setAction {
+                                game.addScreen(
+                                        GameScreen(
+                                                game,
+                                                assets,
+                                                viewport,
+                                                batch,
+                                                preferences,
+                                                skinData,
+                                                layouts
+                                        )
+                                )
+                                game.setScreen<GameScreen>()
+                                game.removeScreen<StartScreen>()
+                                this@StartScreen.dispose()
+                            }
+                        }
+                )
+                row()
+                add(
                     MyTextButton(
                         assets[BundleAssets.Bundle].get("start"),
                         skinData,
