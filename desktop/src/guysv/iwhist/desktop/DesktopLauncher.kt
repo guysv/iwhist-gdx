@@ -20,6 +20,6 @@ object DesktopLauncher {
             )
             setWindowedMode(Const.CONTENT_WIDTH.toInt() * scale, Const.CONTENT_HEIGHT.toInt() * scale)
         }
-        Lwjgl3Application(Game(), config)
+//        Lwjgl3Application(Game(), config)
     }
 }

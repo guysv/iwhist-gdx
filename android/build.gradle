@@ -14,14 +14,17 @@ android {
 
     }
     packagingOptions {
-        exclude 'META-INF/robovm/ios/robovm.xml'
+        resources.excludes.add('META-INF/robovm/ios/robovm.xml')
+        resources.excludes.add('META-INF/NOTICE.md')
+        resources.excludes.add('META-INF/LICENSE.md')
+        resources.excludes.add('META-INF/NOTICE.markdown')
     }
     defaultConfig {
         applicationId "guysv.iwhist"
-        minSdkVersion 24
+        minSdkVersion 26
         targetSdkVersion 33
-        versionCode 21
-        versionName "1.0.1"
+        versionCode 1
+        versionName "1.0.0"
     }
     buildTypes {
         release {

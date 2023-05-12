@@ -14,6 +14,7 @@ import guysv.iwhist.game.GameState
 import guysv.iwhist.game.layout.Layout
 import guysv.iwhist.screens.controls.MyTextButton
 import guysv.iwhist.screens.dialogs.OptionsDialog
+import guysv.iwhist.server.compat.ServerHost
 import guysv.iwhist.util.GamePreferences
 import guysv.iwhist.util.SkinData
 
